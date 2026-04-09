@@ -7,24 +7,31 @@ algoritmo "CRACHÁ TÉCNICO"
 var
 
 ncompleto: caractere
-idade: int
+idade: inteiro
 email: caractere
-vauxilio: int
-previa: log
+vauxilio: real
+previa: logico
 
 
 inicio
 
+    //ATRIBUIÇÕES
+    ncompleto <- "Ricardo Silva"
+    idade <- "25"
+    email <- "ricardo@email.com"
+    vauxilio <- "1200.50"
+    previa <- "verdadeiro"
+
 escreval ("DIGITE SEU NOME")
-leia (ncompleto)
+//leia (ncompleto)
 escreval ("SUA IDADE")
-leia (idade)
+//leia (idade)
 escreval ("SEU EMAIL")
-leia (email)
+//leia (email)
 escreval ("SEU AUXILIO")
-leia (vauxilio)
-escreval ("SUA EXPERIÊNCIA PRÉVIA")
-leia (previa)
+//leia (vauxilio)
+escreval ("POSUI EXPERIÊNCIA PRÉVIA?")
+//leia (previa)
 
 
 fimalgoritmo
