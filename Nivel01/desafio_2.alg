@@ -23,15 +23,20 @@ inicio
     previa <- "verdadeiro"
 
 escreval ("DIGITE SEU NOME")
-//leia (ncompleto)
+leia (ncompleto)
 escreval ("SUA IDADE")
-//leia (idade)
+leia (idade)
 escreval ("SEU EMAIL")
-//leia (email)
+leia (email)
 escreval ("SEU AUXILIO")
-//leia (vauxilio)
+leia (vauxilio)
 escreval ("POSUI EXPERIÊNCIA PRÉVIA?")
-//leia (previa)
+leia (previa)
+se (previa = sim) entao
+    escreva ("Parabéns, vocês está contratado")
+senao
+    escreva ("Infelizmente seu processo para por aqui")
+fimse
 
 
 fimalgoritmo

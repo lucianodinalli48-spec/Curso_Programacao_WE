@@ -1,15 +1,28 @@
-algoritmo "Nome do Programa"
+algoritmo "DESVIO DE FLUXO BANCO DE DADOS"
 // Disciplina  :  [Linguagem e Lógica de Programação]
-// Professor   : [Nome do Professor]
-// Descrição   : Aqui você descreve o que o programa faz! (função)
-// Autor(a)    : Nome do(a) aluno(a)
-// Data atual  : ${DATA_ATUAL}/${MES_ATUAL}/${ANO_ATUAL}
+// Professor   : Ricardo Silva
+// Descrição   : Correção banco de dados
+// Autor(a)    : Luciano dos Santos
+
 var
+
+    naluno: caractere
+    nprof: caractere
+    reserva: caractere
 
 
 
 inicio
 
+    escreval("NOME DO ALUNO")
+    leia (naluno)
+    escreval("NOME DO PROFESSOR")
+    leia (nprof)
+    //reserva <- naluno
+    naluno <-nprof
+    nprof <- naluno
+
+    escreva("O nome do aluno é ", naluno, " e o nome do professor ", nprof)
 
 
 fimalgoritmo
