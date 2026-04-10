@@ -18,8 +18,9 @@ inicio
     leia (naluno)
     escreval("NOME DO PROFESSOR")
     leia (nprof)
-    //reserva <- naluno
-    naluno <-nprof
+    
+    naluno <- nprof
+    reserva<- naluno
     nprof <- naluno
 
     escreva("O nome do aluno é ", naluno, " e o nome do professor ", nprof)
