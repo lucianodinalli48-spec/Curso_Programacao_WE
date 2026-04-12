@@ -16,7 +16,9 @@ inicio
     escreval(item, " registrado com sucesso")
     escreval("DIGITE O SEGUNDO ITEM")
     leia(item)
-    escreva ("Item 1 descartado e item 2 registrado -->> " + item)
+    escreval("Item 1 descartado e item 2 registrado -->> " + item)
     item <- "0"
+    escreval("Inventário resetado, Valor atual: ", item)
 
+    
 fimalgoritmo
