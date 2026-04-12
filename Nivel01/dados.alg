@@ -11,19 +11,23 @@ var
     reserva: caractere
 
 
-
 inicio
 
+    escreval("__________________________")
+    escreval("")
+    escreval("    FLUXO DE DADOS")
+    escreval("__________________________")
+    escreval("")
     escreval("NOME DO ALUNO")
     leia (naluno)
     escreval("NOME DO PROFESSOR")
     leia (nprof)
     
+    reserva <- naluno
     naluno <- nprof
-    reserva<- naluno
-    nprof <- naluno
+    nprof <- reserva
 
-    escreva("O nome do aluno é ", naluno, " e o nome do professor ", nprof)
+    escreval("O nome do aluno é ", naluno, " e o nome do professor ", nprof)
 
 
 fimalgoritmo
