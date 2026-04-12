@@ -5,7 +5,8 @@ algoritmo "Nome do Programa"
 // Autor(a)    : Nome do(a) aluno(a)
 // Data atual  : ${DATA_ATUAL}/${MES_ATUAL}/${ANO_ATUAL}
 var
-
+    n1: inteiro
+    n2: inteiro
     resto: real
 
 inicio
@@ -13,7 +14,8 @@ inicio
     n1 <- 10
     n2 <- 2
     resto <- n1 % n2
-    escreval("resto = ", resto)
-    leia (resto)
+    
+     escreval("O resto da divisão é = ", resto)
+    //leia (resto)
 
 fimalgoritmo
