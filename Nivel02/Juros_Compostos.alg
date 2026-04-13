@@ -6,12 +6,26 @@ algoritmo "Nome do Programa"
 
 var
 
-teste: caractere
+capitalInicial: real
+Juros: real
+tempo: inteiro
+
 
 inicio
 
-teste <- "Este é um teste."
-escreval ("Variável Teste")
-escreva ("O valor da variável TESTE é: " + teste)
+//ATRIBUIÇÕES DAS VARIÁVEIS
+
+    capitalInicial <- 1000
+    Juros <- 1
+    tempo <- 8
+
+escreval ("Qual o capital investido?", capitalInicial)
+//leia (capitalInicial)
+escreval ("Qual a taxa de juros mensal?", Juros)
+//leia (Juros)
+escreval ("Quantos meses para guardar?", tempo)
+//leia (tempo)
+
+escreval ("O montante ao final de ", tempo, " é ", capitalInicial * (1 + Juros) ^ tempo)
 
 fimalgoritmo
