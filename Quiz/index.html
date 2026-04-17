@@ -70,13 +70,19 @@
                     <form>
 
                         <!--Esta linha <input> representa o link com a lógica a ser implementada no back end-->
-                        <input type="radio" value="Python" id="q1a" name="pergunta1"><br>
+                        <input type="radio" value="Python" id="q1a" name="pergunta1">
 
-                        <input type="radio" value="JavaScript" id="q1b" name="pergunta1"><br>
+                        <!--O nome descrito na tag name não é visível para o usuário, sendo então necessário acrescentar uma linha <label>-->
+                            <label for="q1a">Python</label><br>
 
-                        <input type="radio" value="C++" id="q1c" name="pergunta1"><br>
+                        <input type="radio" value="JavaScript" id="q1b" name="pergunta1">
+                        <label for="q1b">JavaScrip</label><br>
 
-                        <input type="radio" value="HTML" id="q1d" name="pergunta1"><br>
+                        <input type="radio" value="C++" id="q1c" name="pergunta1">
+                        <label for="q1c">C++</label><br>
+
+                        <input type="radio" value="HTML" id="q1d" name="pergunta1">
+                        <label for="q1d">HTML</label><br>
 
                     </form>
 
