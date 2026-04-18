@@ -46,7 +46,7 @@
                 <!--Delimita de forma organizada partes específicas do site-->
                 <section>
                     <h2><b><i>Sobre este teste</i></b></h2>
-                    <p>Esse teste foi desenvolvido para treinar seus conhecimentos em <strong>Programação</strong> como:<br> Linguagem de programação, lógica de programação, conceitos básicos e outros.<br> Você encontrará diferentes tipos de perguntas como:<br> Multipla <sup>escolha,</sup> textos, datas, imagens, etc.<br> Você também poderá encontrar alguns acrônimos como: <abbr title="Hipertxt Markup language (Linguagem de marcação hipertexto"> HTML </abbr> e <abbr title="Cascading style sheets"(folhas de estilo em cascata)> CSS, </abbr><br> que são comummente usados em questões relacionada<br> em <em>desenvolvimento Web.</em><br><br> Boa Sorte!</p>
+                    <p>Esse teste foi desenvolvido para treinar seus conhecimentos em <strong>Programação</strong> como:<br> Linguagem de programação, lógica de programação, conceitos básicos e outros.<br> Você encontrará diferentes tipos de perguntas como:<br> Multipla <sup>escolha,</sup> textos, datas, imagens, etc.<br> Você também poderá encontrar alguns acrônimos como: <abbr title="Hipertxt Markup language Linguagem de marcação hipertexto"> HTML </abbr> e <abbr title="Cascading style sheets"(folhas de estilo em cascata)> CSS, </abbr><br> que são comummente usados em questões relacionada<br> em <em>desenvolvimento Web.</em><br><br> Boa Sorte!</p>
                     
                 <!--
                     Propriedades de Parágrafos (textos)
@@ -222,14 +222,27 @@
 
                     <figure>
 
-                        <img src="/QUIZ/assets/Java-Symbol.png" width="400" heigth="400" alt="Imagem do logotipo de programação">
+                        <abbr title="Figura 1: Logotipo da Linguagem de Programação">
+                        <img src="/QUIZ/assets/Java-Symbol.png" width="400" heigth="400" alt="Imagem do logotipo de programação"></abbr>
 
-                        <figcaption>Figura 1: Logotipo da Linguagem de Programação</figcaption>
+                        <!--<figcaption>Figura 1: Logotipo da Linguagem de Programação</figcaption>-->
                     
 
                     </figure>
+
                     <form>
-                    
+                    <!--Esta linha <input> representa o link com a lógica a ser implementada no back end-->
+                        <input type="radio" value="Python" id="q8a" name="pergunta8">
+                        <label for="q8a">Python</label>
+
+                        <input type="radio" value="JavaScript" id="q8b" name="pergunta8">
+                        <label for="q8b">Java</label>
+
+                        <input type="radio" value="C++" id="q8c" name="pergunta8">
+                        <label for="q8c">C++</label>
+
+                        <input type="radio" value="HTML" id="q8d" name="pergunta8">
+                        <label for="q8d">HTML</label>
 
                     <!--Este input representa o "leia" do visualG, sendo que o value será o dado informado pelo usuário-->
                     </form>
