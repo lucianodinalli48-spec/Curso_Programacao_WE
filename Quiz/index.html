@@ -30,15 +30,15 @@
         <body>
 
             <!--Cabeçalho da página-->
-            <header>
+            <header><hr><hr>
 
                 <!--Como boas práticas no desenvolvimento dos sites, recomenda-se 1 <h1> por aba-->
-                <h1>Teste para Programadores</h1>
+                <h1>Teste de Programação</h1>
 
                 <!--Parágrafo-->
                 <p>Teste seus conhecimentos em programação e veja se está preparado</p>
 
-            </header>
+            </header><hr><hr>
 
             <!--Conteúdo da página-->
             <main>
@@ -46,7 +46,7 @@
                 <!--Delimita de forma organizada partes específicas do site-->
                 <section>
                     <h2><b><i>Sobre este teste</i></b></h2>
-                    <p>Esse teste foi desenvolvido para treinar seus conhecimentos em <strong>Programação</strong> como:<br> Linguagem de programação, lógica de programação, conceitos básicos e outros.<br> Você encontrará diferentes tipos de perguntas como:<br> Multipla escolha, textos, datas, imagens, etc.<br> Você também poderá encontrar alguns acrônimos como: <abbr title="Hipertxt Markup language (Linguagem de marcação hipertexto"> HTML </abbr> e <abbr title="Cascading style sheets"(folhas de estilo em cascata)> CSS, </abbr><br> que são comummente usados em questões relacionada<br> em <em>desenvolvimento Web.</em> Boa Sorte!</p>
+                    <p>Esse teste foi desenvolvido para treinar seus conhecimentos em <strong>Programação</strong> como:<br> Linguagem de programação, lógica de programação, conceitos básicos e outros.<br> Você encontrará diferentes tipos de perguntas como:<br> Multipla <sup>escolha,</sup> textos, datas, imagens, etc.<br> Você também poderá encontrar alguns acrônimos como: <abbr title="Hipertxt Markup language (Linguagem de marcação hipertexto"> HTML </abbr> e <abbr title="Cascading style sheets"(folhas de estilo em cascata)> CSS, </abbr><br> que são comummente usados em questões relacionada<br> em <em>desenvolvimento Web.</em><br><br> Boa Sorte!</p>
                     
                 <!--
                     Propriedades de Parágrafos (textos)
@@ -57,9 +57,14 @@
                     <b> --Negrito
                     <i> --Itálico
                     <u> --Sublinhado
+                    <hr> -- Acrescenta uma linha divisória
+                    <small> --Diminui ligeramente o texto escolhido
+                    <sup> -- Cria o efeito de expoente no texto
+                    <sub> -- Cria o efeito de texto abaixo da linha da página
+
                     -->
 
-                </section>
+                </section><hr>
 
                 <!--Inicio do QUIZ
                      Questão 1-->
@@ -73,10 +78,10 @@
                         <input type="radio" value="Python" id="q1a" name="pergunta1">
 
                         <!--O nome descrito na tag name não é visível para o usuário, sendo então necessário acrescentar uma linha <label>-->
-                            <label for="q1a">Python</label><br>
+                        <label for="q1a">Python</label><br>
 
                         <input type="radio" value="JavaScript" id="q1b" name="pergunta1">
-                        <label for="q1b">JavaScrip</label><br>
+                        <label for="q1b">JavaScript</label><br>
 
                         <input type="radio" value="C++" id="q1c" name="pergunta1">
                         <label for="q1c">C++</label><br>
@@ -92,7 +97,145 @@
 
 
 
-                </section>
+                </section><hr>
+
+                <!--Questão 2: texto-->
+                <section>
+
+                    <form>
+                    <h2>Questão 2: Na URL HTTPS:// www.google.com, o trecho "google.com", é conhecido como:</h2>
+
+                    <!--Linha com texto indicativo-->
+                    <!--<label for="">for="pergunta2" Escreva a resposta correta</label><br>-->
+                    <input type="text" id="p2" name="pergunta2"
+                    placeholder="digita a resposta aqui">
+
+                    <!--Este input representa o "leia" do visualG, sendo que o value será o dado informado pelo usuário-->
+                    </form>
+
+
+                </section><hr>
+
+                <!--Questão 3: Senha-->
+                <section>
+
+                    <form>
+                    <h2>Questão 3: Escreva um exemplo de senha segura:</h2>
+
+                    <!--Linha com texto indicativo-->
+                    <label for="p2"><b>responda</b></label><br>
+                    <input type="password" id="p3" name="pergunta3"
+                    placeholder="digita a resposta aqui">
+
+                    <!--Este input representa o "leia" do visualG, sendo que o value será o dado informado pelo usuário-->
+                    </form>
+
+
+                </section><hr>
+
+
+
+                <!--Questão 4: Data-->
+                <section>
+
+                    <form>
+                    <h2>Questão 4: Em que ano o HTML foi lançado?</h2>
+
+                    
+                    <!--<label for="p4"><b>"responda"</b></label><br>-->
+                    <input type="date" id="p4" name="pergunta4">
+
+                    <!--Este input representa o "leia" do visualG, sendo que o value será o dado informado pelo usuário-->
+                    </form>
+
+
+                </section><hr>
+
+                <!--Questão 5: Seção Multipla (checkbox)-->
+                <section>
+
+                    <form>
+                    <h2>Questão 5: Qual dessas tecnologias são consideradas Linguagem de Programação?</h2>
+
+                    
+                    
+                    <input type="checkbox" value="Phyton" id="p5a" name="pergunta5">
+                    <label for="p5a" >Python</label><br>
+
+                    <input type="checkbox" value="HTML" id="p5b" name="pergunta5">
+                    <label for="p5b" >HTML</label><br>
+
+                    <input type="checkbox" value="JavaScript" id="p5c" name="pergunta5">
+                    <label for="p5c" >JavaScript</label><br>
+
+                    <input type="checkbox" value="CSS" id="p5b" name="pergunta5">
+                    <label for="p5d" >CSS</label>
+
+                    <!--Este input representa o "leia" do visualG, sendo que o value será o dado informado pelo usuário-->
+                    </form>
+
+
+                </section><hr>
+
+                <!--Questão 6: Seção Multipla (checkbox)-->
+                <section>
+
+                    <form>
+                    <h2>Questão 6: Faça um upload de um arquivo que contenha um código HTML:</h2>
+
+                    
+                    
+                    <input type="file" id="p6" name="pergunta6">
+                    
+
+                    <!--Este input representa o "leia" do visualG, sendo que o value será o dado informado pelo usuário-->
+                    </form>
+
+
+                </section><hr>
+
+                <!--Questão 7: Menu suspenso-->
+                <section>
+
+                    <form>
+                    <h2>Questão 7: Selecione o ATRIBUTO do "input" que define o seu tipo:</h2>
+
+                    <select>id="p7" name=pergunta7>
+                        <option value="id">id</option>
+                        <option value="Class">Class</option>
+                        <option value="type">type</option>
+                        <option value="name">name</option>
+                        <option value="pleceholder">pleceholder</option>
+                    </select>
+
+                    <!--Este input representa o "leia" do visualG, sendo que o value será o dado informado pelo usuário-->
+                    </form>
+
+
+                </section><hr>
+
+                <!--Questão 8: Adcionar IMAGEM-->
+                <section>
+
+                    
+                    <h2>Questão 8: Qual Linguagem de Programação é represetada pelo logotipo abaixo:</h2>
+
+                    <figure>
+
+                        <img src="/QUIZ/assets/Java-Symbol.png" width="400" heigth="400" alt="Imagem do logotipo de programação">
+
+                        <figcaption>Figura 1: Logotipo da Linguagem de Programação</figcaption>
+                    
+
+                    </figure>
+                    <form>
+                    
+
+                    <!--Este input representa o "leia" do visualG, sendo que o value será o dado informado pelo usuário-->
+                    </form>
+
+
+                </section><hr>
 
             </main>
         
