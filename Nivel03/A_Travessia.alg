@@ -19,17 +19,17 @@ inicio
    escreval("=== ESTADO ATUAL ===")
    escreval("Tempo: ", tempoTotal, " minutos")
    escre("Lado inicial: ")
-   se A = 0 entao escre("A ") fimse
-   se B = 0 entao escre("B ") fimse
-   se C = 0 entao escre("C ") fimse
-   se D = 0 entao escre("D ") fimse
+   se A = 0 entao escreval("A ") fimse
+   se B = 0 entao escreval("B ") fimse
+   se C = 0 entao escreval("C ") fimse
+   se D = 0 entao escreval("D ") fimse
 
    escreval("")
    escre("Lado final: ")
-   se A = 1 entao escre("A ") fimse
-   se B = 1 entao escre("B ") fimse
-   se C = 1 entao escre("C ") fimse
-   se D = 1 entao escre("D ") fimse
+   se A = 1 entao escreval("A ") fimse
+   se B = 1 entao escreval("B ") fimse
+   se C = 1 entao escreval("C ") fimse
+   se D = 1 entao escreval("D ") fimse
 
    escreval("")
    se lanterna = 0 entao
