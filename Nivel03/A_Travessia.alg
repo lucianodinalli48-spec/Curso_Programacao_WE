@@ -1,65 +1,30 @@
-algoritmo "Nome do Programa"
-// Disciplina  :  [Linguagem e Lógica de Programação]
-// Professor   : [Nome do Professor]
-// Descrição   : Aqui você descreve o que o programa faz! (função)
-// Autor(a)    : Nome do(a) aluno(a)
-
+algoritmo "A TRAVESSIA"
+// Disciplina  : Linguagem e Lógica de Programação
+// Professor   : Ricardo Silva
+// Descrição   : A Travessia pelo corredor do Data Center em até 17 minutos
+// Autor(a)    : Luciano Santos
 
 var
-   tempoTotal: inteiro
-   opcao: inteiro
-   A, B, C, D: inteiro
-   lanterna: inteiro
 
-// 0 = lado inicial | 1 = lado final
-
-procedimento mostrarEstado()
-inicio
-   escreval("")
-   escreval("=== ESTADO ATUAL ===")
-   escreval("Tempo: ", tempoTotal, " minutos")
-   escre("Lado inicial: ")
-   se A = 0 entao escreval("A ") fimse
-   se B = 0 entao escreval("B ") fimse
-   se C = 0 entao escreval("C ") fimse
-   se D = 0 entao escreval("D ") fimse
-
-   escreval("")
-   escre("Lado final: ")
-   se A = 1 entao escreval("A ") fimse
-   se B = 1 entao escreval("B ") fimse
-   se C = 1 entao escreval("C ") fimse
-   se D = 1 entao escreval("D ") fimse
-
-   escreval("")
-   se lanterna = 0 entao
-      escreval("Lanterna: lado inicial")
-   senao
-      escreval("Lanterna: lado final")
-   fimse
-   escreval("====================")
-fimprocedimento
+lanterna: inteiro
+Alice, Bruno, Carlos, Diana: inteiro
+TempoMax: inteiro
+opcao: inteiro
 
 inicio
+   escreval("")
+   escreval("-------- JOGO DA TRAVESSIA --------")
+   escreval("")
+   escreval("Para salvar o Data Center de desligar e os técnicos de TI perderem todo o trabalho feito eles precisam passar por um corredor em 17 minutos e todos precisam estar do mesmo lado do Data Center. Ajude-os a atravessar escolhendo as opções corretas.")
 
-   // Todos começam do lado inicial
-   A <- 0
-   B <- 0
-   C <- 0
-   D <- 0
    lanterna <- 0
-   tempoTotal <- 0
+   Alice <- 1
+   Bruno <- 2
+   Carlos <- 5
+   Diana <- 10
+   TempoMax <- 17
 
-   escreval("=== DESAFIO DO DATA CENTER ===")
-   escreval("Leve todos para o outro lado em EXATAMENTE 17 minutos")
-   escreval("A=1 | B=2 | C=5 | D=10")
    escreval("")
-
-   repita
-
-      mostrarEstado()
-
-      escreval("")
       escreval("Escolha uma ação:")
       escreval("1 - A e B atravessam")
       escreval("2 - A e C atravessam")
@@ -73,123 +38,11 @@ inicio
       escreval("10 - D volta")
       escreval("0 - Sair")
 
-      leia(opcao)
+      leia (opcao)
 
-      escolha opcao
+      escolha (opcao)
 
-         caso 1
-            se (A = lanterna) e (B = lanterna) entao
-               A <- 1 - A
-               B <- 1 - B
-               lanterna <- 1 - lanterna
-               tempoTotal <- tempoTotal + 2
-            senao
-               escreval("Movimento inválido!")
-            fimse
+      
 
-         caso 2
-            se (A = lanterna) e (C = lanterna) entao
-               A <- 1 - A
-               C <- 1 - C
-               lanterna <- 1 - lanterna
-               tempoTotal <- tempoTotal + 5
-            senao
-               escreval("Movimento inválido!")
-            fimse
-
-         caso 3
-            se (A = lanterna) e (D = lanterna) entao
-               A <- 1 - A
-               D <- 1 - D
-               lanterna <- 1 - lanterna
-               tempoTotal <- tempoTotal + 10
-            senao
-               escreval("Movimento inválido!")
-            fimse
-
-         caso 4
-            se (B = lanterna) e (C = lanterna) entao
-               B <- 1 - B
-               C <- 1 - C
-               lanterna <- 1 - lanterna
-               tempoTotal <- tempoTotal + 5
-            senao
-               escreval("Movimento inválido!")
-            fimse
-
-         caso 5
-            se (B = lanterna) e (D = lanterna) entao
-               B <- 1 - B
-               D <- 1 - D
-               lanterna <- 1 - lanterna
-               tempoTotal <- tempoTotal + 10
-            senao
-               escreval("Movimento inválido!")
-            fimse
-
-         caso 6
-            se (C = lanterna) e (D = lanterna) entao
-               C <- 1 - C
-               D <- 1 - D
-               lanterna <- 1 - lanterna
-               tempoTotal <- tempoTotal + 10
-            senao
-               escreval("Movimento inválido!")
-            fimse
-
-         caso 7
-            se A = lanterna entao
-               A <- 1 - A
-               lanterna <- 1 - lanterna
-               tempoTotal <- tempoTotal + 1
-            senao
-               escreval("Movimento inválido!")
-            fimse
-
-         caso 8
-            se B = lanterna entao
-               B <- 1 - B
-               lanterna <- 1 - lanterna
-               tempoTotal <- tempoTotal + 2
-            senao
-               escreval("Movimento inválido!")
-            fimse
-
-         caso 9
-            se C = lanterna entao
-               C <- 1 - C
-               lanterna <- 1 - lanterna
-               tempoTotal <- tempoTotal + 5
-            senao
-               escreval("Movimento inválido!")
-            fimse
-
-         caso 10
-            se D = lanterna entao
-               D <- 1 - D
-               lanterna <- 1 - lanterna
-               tempoTotal <- tempoTotal + 10
-            senao
-               escreval("Movimento inválido!")
-            fimse
-
-      fimescolha
-
-      se tempoTotal > 17 entao
-         escreval("")
-         escreval("❌ Você perdeu! Tempo estourou.")
-         interrompa
-      fimse
-
-   ate (A = 1) e (B = 1) e (C = 1) e (D = 1) ou (opcao = 0)
-
-   escreval("")
-   escreval("Tempo final: ", tempoTotal)
-
-   se (A = 1) e (B = 1) e (C = 1) e (D = 1) e (tempoTotal = 17) entao
-      escreval("🎉 PARABÉNS! Você salvou o Data Center!")
-   senao
-      escreval("⚠️ Não conseguiu completar corretamente.")
-   fimse
 
 fimalgoritmo
