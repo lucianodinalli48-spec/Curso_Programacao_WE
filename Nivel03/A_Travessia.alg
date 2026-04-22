@@ -13,7 +13,7 @@ var
 procedimento mostrarEstado
 inicio
    escreval("")
-   escreval("-------- Lado do corredor que estão agora --------")
+   escreval("-------- MOSTRA O LADO EM QUE ESTÁ A LANTERNA --------")
    escreval("Tempo: ", tempomax, " minutos")
 
    escreval("Lado inicial: ")
