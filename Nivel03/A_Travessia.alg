@@ -1,194 +1,206 @@
-algoritmo "Nome do Programa"
-// Disciplina  :  [Linguagem e Lógica de Programação]
-// Professor   : [Nome do Professor]
-// Descrição   : Aqui você descreve o que o programa faz! (função)
-// Autor(a)    : Nome do(a) aluno(a)
+algoritmo "A TRAVESSIA"
+// Disciplina  : Linguagem e Lógica de Programação
+// Professor   : Ricardo Silva
+// Descrição   : Não deixar o Data Center desligar
+// Autor(a)    : Luciano Santos
 
 var
-   tempoTotal: inteiro
+   tempomax: inteiro
    opcao: inteiro
-   A, B, C, D: inteiro
+   Alice, Bruno, Carlos, Diana: inteiro
    lanterna: inteiro
 
-// 0 = lado inicial | 1 = lado final
-
-procedimento mostrarEstado()
+procedimento mostrarEstado
 inicio
    escreval("")
-   escreval("=== ESTADO ATUAL ===")
-   escreval("Tempo: ", tempoTotal, " minutos")
-   escre("Lado inicial: ")
-   se A = 0 entao escre("A ") fimse
-   se B = 0 entao escre("B ") fimse
-   se C = 0 entao escre("C ") fimse
-   se D = 0 entao escre("D ") fimse
+   escreval("-------- Lado do corredor que estão agora --------")
+   escreval("Tempo: ", tempomax, " minutos")
 
-   escreval("")
-   escre("Lado final: ")
-   se A = 1 entao escre("A ") fimse
-   se B = 1 entao escre("B ") fimse
-   se C = 1 entao escre("C ") fimse
-   se D = 1 entao escre("D ") fimse
+   escreval("Lado inicial: ")
+   se Alice = 0 entao
+   escreval("Alice ")
+   fimse
 
+   se Bruno = 0 entao
+   escreval("Bruno ")
+   fimse
+
+   se Carlos = 0 entao
+   escreval("Carlos ")
+   fimse
+
+   se Diana = 0 entao
+   escreval("Diana ")
+   fimse
    escreval("")
+
+   escreval("Lado final: ")
+   se Alice = 1 entao
+   escreval("Alice ")
+fimse
+
+   se Bruno = 1 entao
+   escreval("Bruno ")
+   fimse
+
+   se Carlos = 1 entao
+   escreval("Carlos ")
+   fimse
+
+   se Diana = 1 entao
+   escreval("Diana ")
+   fimse
+   escreval("")
+
    se lanterna = 0 entao
       escreval("Lanterna: lado inicial")
    senao
       escreval("Lanterna: lado final")
    fimse
-   escreval("====================")
+
+   escreval("___________________________")
 fimprocedimento
 
 inicio
 
-   // Todos começam do lado inicial
-   A <- 0
-   B <- 0
-   C <- 0
-   D <- 0
+   Alice <- 0
+   Bruno <- 0
+   Carlos <- 0
+   Diana <- 0
    lanterna <- 0
-   tempoTotal <- 0
+   tempomax <- 0
 
-   escreval("=== DESAFIO DO DATA CENTER ===")
-   escreval("Leve todos para o outro lado em EXATAMENTE 17 minutos")
-   escreval("A=1 | B=2 | C=5 | D=10")
-   escreval("")
+   escreval("-------- A TRAVESSIA --------")
+   escreval("Quatro Técnicos de TI precisam chegar no Data Center antes que ele desliga fazendo com que percam todo o trabalho já feito. Para chegar precisam atravessar um corredor escuro e ele só tem 1 lanternar. O Data Center vai desligar em 17 minutos. Ajude-os a atravessar o corredor a tempo")
+   escreval("Alice=1 minuto | Bruno=2 minutos | Carlos=5 minutos | Diana=10 minutos")
 
    repita
 
-      mostrarEstado()
+      mostrarEstado
 
       escreval("")
-      escreval("Escolha uma ação:")
-      escreval("1 - A e B atravessam")
-      escreval("2 - A e C atravessam")
-      escreval("3 - A e D atravessam")
-      escreval("4 - B e C atravessam")
-      escreval("5 - B e D atravessam")
-      escreval("6 - C e D atravessam")
-      escreval("7 - A volta")
-      escreval("8 - B volta")
-      escreval("9 - C volta")
-      escreval("10 - D volta")
-      escreval("0 - Sair")
+      escreval("Escolha:")
+      escreval("1-Alice e Bruno atravessam | 2-Alice e Carlos atravessam | 3-Alice e Diana atravessam")
+      escreval("4-Bruno e Carlos atravessam | 5-Bruno e Diana atravessam | 6-Carlos e Diana atravessam")
+      escreval("7-Alice volta | 8-Bruno volta")
+      escreval("9-Carlos volta | 10-Diana volta")
+      escreval("0-Sair")
 
       leia(opcao)
 
       escolha opcao
 
          caso 1
-            se (A = lanterna) e (B = lanterna) entao
-               A <- 1 - A
-               B <- 1 - B
+            se (Alice = lanterna) e (Bruno = lanterna) entao
+               Alice <- 1 - Alice
+               Bruno <- 1 - Bruno
                lanterna <- 1 - lanterna
-               tempoTotal <- tempoTotal + 2
+               tempomax <- tempomax + 2
             senao
-               escreval("Movimento inválido!")
+               escreval("Invalido")
             fimse
 
          caso 2
-            se (A = lanterna) e (C = lanterna) entao
-               A <- 1 - A
-               C <- 1 - C
+            se (Alice = lanterna) e (Carlos = lanterna) entao
+               Alice <- 1 - Alice
+               Carlos <- 1 - Carlos
                lanterna <- 1 - lanterna
-               tempoTotal <- tempoTotal + 5
+               tempomax <- tempomax + 5
             senao
-               escreval("Movimento inválido!")
+               escreval("Invalido")
             fimse
 
          caso 3
-            se (A = lanterna) e (D = lanterna) entao
-               A <- 1 - A
-               D <- 1 - D
+            se (Alice = lanterna) e (Diana = lanterna) entao
+               Alice <- 1 - Alice
+               Diana <- 1 - Diana
                lanterna <- 1 - lanterna
-               tempoTotal <- tempoTotal + 10
+               tempomax <- tempomax + 10
             senao
-               escreval("Movimento inválido!")
+               escreval("Invalido")
             fimse
 
          caso 4
-            se (B = lanterna) e (C = lanterna) entao
-               B <- 1 - B
-               C <- 1 - C
+            se (Bruno = lanterna) e (Carlos = lanterna) entao
+               Bruno <- 1 - Bruno
+               Carlos <- 1 - Carlos
                lanterna <- 1 - lanterna
-               tempoTotal <- tempoTotal + 5
+               tempomax <- tempomax + 5
             senao
-               escreval("Movimento inválido!")
+               escreval("Invalido")
             fimse
 
          caso 5
-            se (B = lanterna) e (D = lanterna) entao
-               B <- 1 - B
-               D <- 1 - D
+            se (Bruno = lanterna) e (Diana = lanterna) entao
+               Bruno <- 1 - Bruno
+               Diana <- 1 - Diana
                lanterna <- 1 - lanterna
-               tempoTotal <- tempoTotal + 10
+               tempomax <- tempomax + 10
             senao
-               escreval("Movimento inválido!")
+               escreval("Invalido")
             fimse
 
          caso 6
-            se (C = lanterna) e (D = lanterna) entao
-               C <- 1 - C
-               D <- 1 - D
+            se (Carlos = lanterna) e (Diana = lanterna) entao
+               Carlos <- 1 - Carlos
+               Diana <- 1 - Diana
                lanterna <- 1 - lanterna
-               tempoTotal <- tempoTotal + 10
+               tempomax <- tempomax + 10
             senao
-               escreval("Movimento inválido!")
+               escreval("Invalido")
             fimse
 
          caso 7
-            se A = lanterna entao
-               A <- 1 - A
+            se Alice = lanterna entao
+               Alice <- 1 - Alice
                lanterna <- 1 - lanterna
-               tempoTotal <- tempoTotal + 1
+               tempomax <- tempomax + 1
             senao
-               escreval("Movimento inválido!")
+               escreval("Invalido")
             fimse
 
          caso 8
-            se B = lanterna entao
-               B <- 1 - B
+            se Bruno = lanterna entao
+               Bruno <- 1 - Bruno
                lanterna <- 1 - lanterna
-               tempoTotal <- tempoTotal + 2
+               tempomax <- tempomax + 2
             senao
-               escreval("Movimento inválido!")
+               escreval("Invalido")
             fimse
 
          caso 9
-            se C = lanterna entao
-               C <- 1 - C
+            se Carlos = lanterna entao
+               Carlos <- 1 - Carlos
                lanterna <- 1 - lanterna
-               tempoTotal <- tempoTotal + 5
+               tempomax <- tempomax + 5
             senao
-               escreval("Movimento inválido!")
+               escreval("Invalido")
             fimse
 
          caso 10
-            se D = lanterna entao
-               D <- 1 - D
+            se Diana = lanterna entao
+               Diana <- 1 - Diana
                lanterna <- 1 - lanterna
-               tempoTotal <- tempoTotal + 10
+               tempomax <- tempomax + 10
             senao
-               escreval("Movimento inválido!")
+               escreval("Invalido")
             fimse
 
       fimescolha
 
-      se tempoTotal > 17 entao
-         escreval("")
-         escreval("❌ Você perdeu! Tempo estourou.")
+      se tempomax > 17 entao
+         escreval("Perdeu - tempo estourou")
          interrompa
       fimse
 
-   ate (A = 1) e (B = 1) e (C = 1) e (D = 1) ou (opcao = 0)
+   ate (Alice = 1) e (Bruno = 1) e (Carlos = 1) e (Diana = 1) ou (opcao = 0)
 
-   escreval("")
-   escreval("Tempo final: ", tempoTotal)
+   escreval("Tempo final: ", tempomax)
 
-   se (A = 1) e (B = 1) e (C = 1) e (D = 1) e (tempoTotal = 17) entao
-      escreval("🎉 PARABÉNS! Você salvou o Data Center!")
+   se (Alice = 1) e (Bruno = 1) e (Carlos = 1) e (Diana = 1) e (tempomax = 17) entao
+      escreval("Parabéns! Todo o trabalho no Data Center está a salvo!")
    senao
-      escreval("⚠️ Não conseguiu completar corretamente.")
+      escreval("O Data Center desligou e você perdeu todo o trabalho")
    fimse
 
 fimalgoritmo
