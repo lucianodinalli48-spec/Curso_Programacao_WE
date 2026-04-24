@@ -68,4 +68,6 @@ p.introdução{
     text-align: justify;
     color: #021825;
     padding: 1.5rem;
+    background-color: azure;
+    border-left: 1rem solid;
 }
