@@ -1,0 +1,345 @@
+<!-- Declara que este ficheiro é um documento HTML5 moderno -->
+<!doctype html>
+
+<!-- Inicia o código HTML e define o idioma da página como Português do Brasil -->
+<html lang="pt-br">
+
+    <!-- A tag <head> guarda as configurações invisíveis da página (metadados, links de estilo, título da aba) -->
+
+    <head>
+        <!-- O título que vai aparecer na aba (separador) do navegador de internet -->
+        <title>Teste para Programadores</title>
+
+            <!-- Define a codificação de caracteres para suportar acentos (á, ç, ã, etc) -->
+        <meta charset="UFT-8">
+
+         <!-- Faz com que a página seja responsiva, ou seja, que se adapte a ecrãs de telefones móveis e tablets -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+         <!-- Descrição do site e suas características -->
+        <meta name="description" content="Um quiz interativo para Programadores">
+
+        <meta name="author" content="Luciano dos Santos">
+
+        <!-- Cria o link para a pasta de estilos CSS -->
+        <link rel="stylesheet" href="/HTML_CSS/Html/completo/css/style.css">
+
+
+    </head>
+
+    <!-- A tag <body> é o corpo da página. Tudo o que colocarmos aqui dentro será visível para o jogador -->
+
+    <body>
+        
+        <!-- Cabeçalho da página -->
+        <header>
+            <hr>
+            <hr>
+
+            <!-- Como boas práticas é recomendado o uso de apenas um "h1" por página -->
+            <!-- <h1> style="color: red">Teste interativo para programadores</h1> -- CSS in line -->
+            <h1>Teste interativo para programadores</h1>
+
+            <!--"P" = Parágrafo-->
+            <p>Teste seus conhecimentos em programação e veja qual a sua pontuação</p>
+            <hr>            
+
+        </header>
+        <!-- Conteúdo do site com tags semânticas como forma de organização. -->
+         <main>
+
+            <!-- Introdução do quiz -->
+            <section>
+                <!-- Método 1: Selecionando por ID e Classe para estilização tipográfica avançada -->
+                <h2 id="s01> Sobre esse quiz</h2>
+                <p class="texto-introdução"> Este teste foi desenvolvido para treinar seus conhecimentos em <strong>Programação</strong> como:<br> Linguagem de programação, Lógica de programação, conceitos básicos entre outros.<br> Você encontrará diferentes tipos de perguntas como:<br> Múltipla escolha, texto, Datas, imagens, etc.<br> Você também poderá encontrar alguns acrônimos <abbr title="Hipertxt Markup Language (Linguagem de marcação Hipertexto)"> HTML </abbr> e <abbr title="Cascading style Sheets (Folhas de Estilo em Cascata)">CSS</abbr>, <br> que são comumente usados em questões relacionadas em <em>Desenvolvimento Web</em><br><br> <b><i> Boa Sorte!!</i></b> </p>
+
+                <!--
+                Propriedades de Parágrafos (textos)
+                <strong> -- Dá forte importância ao texto
+                <em> -- Dá enfase no texto escolhido
+                <br> -- Quebra de linha
+                <abbr> -- Cria uma abreviação explicativa ao passar o mouse
+                <b> -- Negrito
+                <i> -- Itálico
+                <u> -- Sublinhado
+                <hr> -- Divide em sessões
+                <small> -- Diminui um pouco a letra
+                <del> -- Riscado na palavra ou texto
+                <sup> -- Faz o efeito de Potência em texto
+                <sub> -- Faz o texto mais em baixo
+                <mark> -- Marca o texto                
+            -->
+            </section>
+
+            <!-- PERGUNTA1 >> MÚLTIPLA ESCOLHA -->
+            <section>
+                <!-- ======================================================
+                        AULA: SEMÂMNTICA DE FORMULÁRIOS NA WEB E moderno
+                        =================================================== -->
+                <h2>1: Qual linguagem é usada para estruturar páginas WEB?</h2>
+                <!-- A tag <form> define um documento ou seção que contém controles interativos. [MDN Reference: <form>] -->
+                
+                <form>
+                    <!-- O atributo type="radio" cria um botão de seleção única.
+                     O atributo "name" deve ser igual em todos os botões do mesmo grupo! [MDN Reference: <input type="radio">] -->
+
+                    <input type="radio" value="Python" id="p1a" name="pergunta1">
+                    <!-- p1a interação com o JS pergunta 1 opção a -->
+
+                    <!-- O nome descrito na opção não aparece sendo necessário apresentar em uma tag <label> -->
+                    <!-- A tag <label> é o rótulo do input. O atributo "for" DEVE ser igual ao "id" do input correspondente.
+                    Isso cria um vínculo mágico de clique! Se clicar na palavra, o botão preenche. [MDN Reference: <label>]-->
+                    
+                    <label for="p1a">Python</label><br>
+
+                    <input type="radio" value="HTML" id="p1b" name="pergunta1">
+                    <label for="p1b">HTML</label><br>
+
+                    <input type="radio" value="JavaScript" id="p1c" name="pergunta1">
+                    <label for="p1c">JavaScript</label><br>
+
+                    <input type="radio" value="Ruby" id="p1d" name="pergunta1">
+                    <label for="p1b">Ruby</label><br>
+
+                </form>
+                <!--<form> -- Formato Múltipla escolha -->
+            </section>
+            <hr>
+
+            <!-- PERGUNTA 2 >> Texto -->
+            <section>
+                <h2>2: Na URL http://wwww.google.com o trecho "google.com" é conhecido como:</h2>
+
+                <form>
+
+                    <!-- No caso da caixa de texto o "value" será o dado que o usuário digitar -->
+                    <!-- O type="text" cria um campo de texto simples de uma linha.
+                    O "placeholder" é aquela dica curta que some magicamente ao começar a digitar. [MDN Reference: <input type="text"> -->
+
+                    <input type="text" id="p2" name="pergunta2" placeholder="Digite sua resposta">
+
+                </form>
+                
+            </section>
+            <hr>
+
+            <!-- PERGUNTA 3 >> senha -->
+            <section>
+
+                <h2>3: Escreva um exemplo de senha segura:</h2>
+
+                <form>
+
+                    <!--Como no texto o "value" será informado pelo Usuário -->
+                    <!-- O type="password" esconde os caracteres digitados (gerando asteriscos) para proteger a senha visualmente de quem está ao redor. [MDN Reference: <input type="password"] -->
+                    <input type="password" id="p3" name="pergunta3" placeholder="Digita sua senha">
+            
+            </form>
+
+            </section>
+            <hr>
+
+            <!-- PERGUNTA 4 >> Data -->
+
+            <section>
+
+                <h2>5: Quais dessas tecnologias são consideradas linguagens de programação?</h2>
+
+                <form>
+                    <!-- Mostra o box de formatação de checkbox -->
+                    <!-- O type="checkbox" cria as "caixinhas quadradas" de seleção Múltipla, onde o usuário pode marcar várias opções ao mesmo tempo do mesmo grupo. [MDN Reference: <input type="checkbox"] -->
+
+                    <input type="checkbox" value="Python" id="p5a" name="pergunta5">
+                    <label for="p5a">Python</label>
+
+                    <input type="checkbox" value="JavaScript" id="p5b" name="pergunta5">
+                    <label for="p5b">JavaScript</label>
+
+                    <input type="checkbox" value="Ruby" id="p5c" name="pergunta5">
+                    <label for="p5c">Ruby</label>
+
+                    <input type="checkbox" value="Java" id="p5d" name="pergunta5">
+                    <label for="p5d">Java</label>
+
+                </form>
+
+            </section>
+            <hr>
+
+            <!-- PERGUNTA 6 >> Upload de Arquivo -->
+            <section>
+
+                <h2>6: Faça o upload de um arquivo que contenha um código HTML:</h2>
+
+                <form>
+
+                    <!-- Mostra o box de formatação de Upload -->
+                    <!-- O type="file" aciona o sistema operacional para abrir aquela janela de procurar e anexar um arquivo do dispositivo do usuário. [MDN Reference: <input type="file"] -->
+                    
+                    <input type="file" id="p6" name="pergunta6" >
+                </form>
+
+            </section>
+            <hr>
+
+            <!-- PERGUNTA7 >> Menu suspenso -->
+            <section>
+
+                <h2>7: Selecione o atributo do input que define o seu tipo</h2>
+
+                <form>
+                    
+                    <!-- Não utilizamos a tag "input" mas a tag "select" que monta a box para seleção -->
+                    <!-- A tag <select> cria um menu suspenso (Dropdown), excelente para economizar espaço visual na tela em listas longas. [MDN Reference: <select>] -->
+
+                    <select id="p7" name="pergunta7">
+
+                        <!-- A tag Options que montam a lista de opções -->
+                        <!-- A tag <option> define os itens de escolha. O texto no meio é pro usuário ler, o atributo "value" é a informação de fato capturada pelo sistema. [MDN Reference: <option>] -->
+
+                        <option value="id">id</option>
+                        <option value="class">class</option>
+                        <option value="type">type</option>
+                        <option value="name">name</option>
+                        <option value="placeholder">placeholder</option>
+
+                    </select>
+
+                </form>
+
+            </section>
+            <hr>
+
+            <!-- Pergunta 8: >> Adicionando Imagens -->
+
+            <section>
+
+                <h2>8: Qual linguagem de programação é representada pelo logotipo abaixo?</h2>
+
+                <!-- Monta uma área para a edição própria de imagens -->
+                <!-- A tag <figure> é a área semântica correta para ilustações, diagramas ou imagens que são referenciadas no conteúdo principal. [MDN Reference: <figure>] -->
+
+                <figure>
+                    <!-- A tag <img> não precisa de fechamento. O "src" busca a imagem, e o "alt" descreve a imagem para pessoas com deficiência visual e motores de busca do Google. [MDN Reference: <img>] -->
+                    <img src="/html_css/html/completo/css/assets/java.png" alt="Logotipo de uma liguagem de programação">
+
+                    <!-- <figcaption> é a legenda oficial atrelada rigidamente à iamgem na estrutura semântica do HTML. [MDN Reference: <figcaption>] -->
+                    <figcaption>Figura 1 - Logotipo de uma linguagem de programação</figcaption>
+
+                    <!-- <figcaption> -- Legenda para a imagem
+                        <img> -- Habilita o navegador a implementar imagens
+                        src -- Solicita o caminho onde a imagem está
+                        alt -- Descrição da imagem para leitores de acessibilidade
+                         -->
+                </figure>
+
+                <form>
+
+                    <input type="text" id="p8" name="pergunta8" placeholder="Digite sua resposta">
+                </form>
+
+            </section>
+            <hr>
+
+            <!-- Tabela de Pontuação -->
+            <section>
+
+                <h2>Tabela de Pontuação</h2>
+
+                <!-- Monta a estrutura de uma tabela -->
+                <!-- Diga Didática para a turma: O correto semanticamente é o <tbody> ficar DENTRO da <table> agrupando as linhas do corpo, e não o contrário! -->
+                
+                <tbody> <!-- Artificio utilizado em navegadores que não mostrem  a tabela apenas com a tag "table" -->
+                    <!-- A tag <table> organiza os dados em um formato universal de grade (linhas e colunas). [MDN Reference: <table>] -->
+                    <table> border="1"
+
+                        <!-- <thead> agrupa a linha do cabeçalho da tabela. [MDN Reference: <thead>] -->
+                        <thead>
+                            <!-- <tr> = Table Row (linha). <th> = Table header (cabeçalho/Título da Coluna) -->
+
+                                <tr>
+
+                                    <th>Pontuação</th>
+                                    <th>Descrição</th>
+                                </tr>
+                        </thead>
+                        <!-- A tag <tr> significa Table Row (linha da tabela horizontalmente). Dentro dela usamos <td> (Table Data) para as células de texto normais. -->
+                        <tr>
+                            <td> 0 - 2 </td>
+                            <td> Não foi bem! Tente novamente </td>
+                        </tr>
+
+                        <tr>
+                            <td> 3 - 4 </td>
+                            <td> Precisa melhorar muito ainda! </td>
+                        </tr>
+
+                        <tr>
+                            <td> 5 - 6 </td>
+                            <td> Regular mas não é o suficiente </td>
+                        </tr>
+
+                        <tr>
+                            <td> 7 - 8 </td>
+                            <td> Muito bom!!! Você está aprendendo </td>
+                        </tr>
+
+                        <tr>
+                            <td> 9 - 10 </td>
+                            <td> Parabéns, programador!!! </td>
+                        </tr>
+
+                        <tfoot> <!-- Rodapé da tabela, não há necessidade da tag tr -->
+                            <td colspan="2"> Boa sorte na próxima!!!</td>
+
+                        </tfoot>
+
+                    </table>
+                
+                </tbody>
+            </section>
+            <br>
+
+            <section>
+                <!-- Lista de Resposta -->
+
+                <h2> Verifique suas respostas </h2>
+
+                <!-- Como na tabela, para trabalharmos com listas, primeiramente precisamos informar a intenção através da tag ul
+                    ul -- Habilita a lista
+                    ol -- Lista numerada
+                    li -- Lista de pontos
+                     -->
+
+                <!-- A tag <details> cria nativamente um botão expansível tipo "sanfona" (Accordion) super moderno, SEM PRECISAR de JavaScript! [MDN Reference: <details>] -->
+                
+                <details>
+
+                    <!-- <summary> é o título/rótulo do botão que ficará sempre visível para ser clicado. [MDN Reference: <summary>] -->
+                    <summary>Clique para visualizar as respostas</summary>
+                    <!-- Dica de Boas Práticas: é sempre recomendável que todos os <li> fiquem presos dentro de um <ul> (lista não ordenada) ou <ol> (lista ordenada) -->
+
+                    <li>HTML</li>
+                    <li>Domínio</li>
+                    <li>Ab3@_lkRt12</li>
+                    <li>Python, JavaScript, Java</li>
+                    <li>*.html</li>
+                    <li>type</li>
+                    <li>Java</li>
+                    
+                </details><br>
+
+            </section>
+
+            <section>
+
+
+                
+            </section>
+         </main>
+
+
+    </body>
+
+</html>
