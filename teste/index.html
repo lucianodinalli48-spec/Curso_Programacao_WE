@@ -333,6 +333,23 @@
             </section>
 
             <section>
+                <!-- A  tag <fildeset> desenha um quadro de organização em torno do formulário e a tag <legend> é o título cravado na borda desse quadro -->
+                <fieldset>
+                    <legend> Informações de contato: </legend>
+
+                    <label for="name">Informe seu nome: </label>
+                    <input type="text" id="name" name="name"><br><br>
+
+                    <label for="email"> Informe seu Email: </label>
+                        <!-- O type="email" fará o navegador validar se o usuário colocou o "@" e tem formato válido automaticamente na hora do envio. [MDN Reference: <input type="email">] -->
+                    <input type="email" id="email" name="email"><br><br>
+
+                    <label for="name"><b>Commentários:</b></label><br><br>
+
+                     <!-- A tag <textarea> permite a digitação de textos grandes/múltiplas linhas. o atribuito rows/cols ajusta o tamanho inicial e o usuário pode redimensioná-lo. [MDM Reference: <textarea>] -->
+                    <textarea type="text" id="comment" name="comentários" rows="4" cols="50" placeholder="Digite seus comentários aqui"></textarea>
+
+                </fieldset>
 
 
                 
