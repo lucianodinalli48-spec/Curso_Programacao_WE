@@ -233,3 +233,40 @@ figure {
     border-radius: 15px;
     border: 1px solid var(--border-color);
 }
+
+/* Seleciona parágrafos que possuam a classe 'texto-introducao'.
+   [MDN Reference: Class selectors (.)] */
+p.texto-introducao {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-align: justify;
+  color: #cbd5e1; /* Cor de texto mais suave para leitura no fundo escuro */
+  padding: 25px;
+  background: rgba(15, 23, 42, 0.6); /* Fundo escuro translúcido */
+  border-left: 6px solid var(--primary); /* Barra lateral Azul Vibrante */
+  border-radius: 0 15px 15px 0;
+  /* A palavra 'inset' joga a sombra para o lado de DENTRO do objeto */
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
+  transition: all 0.45s ease-in-out;
+}
+
+/* O Lado Dinâmico: Efeito de cartão 3D que salta para a direita */
+p.texto-introducao:hover {
+  background: rgba(30, 41, 59, 0.8);
+  transform: translateX(10px);
+  border-left-color: var(--accent); /* Muda a borda de azul para roxo */
+  box-shadow: 0 10px 25px rgba(139, 92, 246, 0.3), inset 0 0 15px rgba(255,255,255,0.05);
+}
+
+/* Magia do CSS: O Pseudo-elemento ::first-letter.
+   Ele localiza matematicamente a primeira letra do parágrafo, não importa qual seja.
+   [MDN Reference: ::first-letter] */
+p.texto-introducao::first-letter {
+  font-size: 4rem;
+  font-weight: 800;
+  color: var(--primary);
+  float: left; /* Faz o restante do texto "contornar" a letra que flutua à esquerda */
+  margin-right: 12px;
+  line-height: 1;
+  text-shadow: 0 0 15px rgba(59, 130, 246, 0.8); /* Faz a primeira letra parecer um neon aceso */
+}
