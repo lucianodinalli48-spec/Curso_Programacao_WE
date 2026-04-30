@@ -1,0 +1,45 @@
+<!-- Declara que é um arquivo html -->
+<!doctype html>
+
+<!-- Inicia e declaro o idioma Português-->
+ <html "lang-pt-br">
+
+ <head>
+    <!-- O título que vai aparecer na aba (separador) do navegador de internet -->
+        <title>Lista de Tarefas!</title>
+
+            <!-- Define a codificação de caracteres para suportar acentos (á, ç, ã, etc) -->
+        <meta charset="UFT-8">
+
+         <!-- Faz com que a página seja responsiva, ou seja, que se adapte a ecrãs de telefones móveis e tablets -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+         <!-- Descrição do site e suas características -->
+        <meta name="description" content="Olá mundo">
+
+        <meta name="author" content="Luciano dos Santos">
+
+        <!-- Cria o link para a pasta de estilos CSS -->
+        <link rel="stylesheet" href=".\CSS\style.css">
+    
+</head>
+
+<body>
+    <div class="container">
+        <h1>Lista de Tarefas</h1>
+        <p> Adicione suas tarefas </p>
+        <input type="text" id="Tarefa" placeholder="Digite sua Tarefa"><br><br>
+        <button onclick="adicionarMensagem()">Adicionar tarefa</button>
+        <button onclick="removerTarefa()">Remover tarefa</button>
+        <p id="mensagem"></p>
+                            
+    </div>
+
+    <script src=".\js\script.js"></script>
+
+
+</body>
+
+ </html>
+
+    
