@@ -1,0 +1,87 @@
+body {
+
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    min-width: 100vh; /* Altura minima do display no caso 100% vertical e horizontal */
+    
+
+}
+
+.container {
+
+    background-color: bisque;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    font-size: medium;
+    border-radius: 0.7rem;
+    color: brown;
+    border-style: groove;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+    display: block;    
+    margin: center;
+    
+
+}
+
+.contfilho {
+    display: flex;
+    color: #2405ac;
+    position: relative;
+    padding: 0.7rem
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        
+}
+
+
+input {
+
+    color: aquamarine;
+}
+
+
+label {
+
+    width: 100%;
+}
+
+.inUser{
+
+    width: 100%;
+}
+
+.label {
+
+    flex-direction: column;
+    display: flex;
+    color: #2405ac;
+    
+}
+
+.input {
+    flex-direction: column;
+    display: flex;
+    color: #06fd12;
+    width: 80%;
+    
+}
+
+.ent {
+    color: rgb(51, 12, 221);
+    border-color: rgb(243, 9, 9);
+    width: 40%;
+    margin: auto;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+
+button {
+
+    
+}
