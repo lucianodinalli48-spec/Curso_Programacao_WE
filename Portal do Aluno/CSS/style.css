@@ -1,0 +1,41 @@
+/* ====================================================================
+ARQUIVO DE ESTILOS CSS - GUIA DIDÁTICO
+======================================================================= */
+
+/* Importando uma fonte externa do Google Fonts.
+Isso permite usar tipograficas modernas que não vêm instaladas no PC do usuário.
+[MDN Reference: @importa] - Procure no MDN para ver como importar folhas de estilo. */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet');
+
+/* O seletor :root representa a raiz do documento (o HTML inteiro).
+É o melhor lugar para criar "variáveis CSS", guardando valores que vamos repertir muito.com
+[MDN Reference: :root e ---* (Custom properties)] */
+:root {
+    --bg-color: #285fd6; /* Variavel para cor de fundo principal */
+    --card-bg: rgba(30, 41, 59, 0.7); /* Fundo com transparência (canal Alpha do rgba) par efeito vidro */
+    --text-color: #161815; /* Cor do texto claro */
+    --primary: #0b1018; /* Cor Azul vibrante (nossa cor primária) */
+    --accent: #8b5cf6; /* Cor Roxo (Nossa cor de destaque) */
+    --border-color: rgba(212, 183, 183, 0.1); /* Borda branca com apenas 10% de visibilidade */
+    
+}
+
+header {
+
+    display: grid;
+    grid-template-columns: 25% 45% 30%;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    color: #000;
+
+}
+
+.body {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    margin: 0;
+    padding: 2rem;
+    justify-content: center;
+    
+}
