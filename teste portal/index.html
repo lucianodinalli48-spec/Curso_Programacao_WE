@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro de Produto</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>Portal do Aluno</h2>
+    <div class="menu">
+      <a href="#">Início</a>
+      <a href="#" class="active">Cadastrar Produtos</a>
+      <a href="#">Meus Produtos</a>
+      <a href="#">Preços</a>
+      <a href="#">Configurações</a>
+    </div>
+  </div>
+
+  <!-- Main -->
+  <div class="main">
+    <div class="topbar">
+      <input type="text" class="search" placeholder="Pesquisar...">
+      <div class="user">Ana Silva</div>
+    </div>
+
+    <div class="card">
+      <h2>Cadastro de Novo Produto - Passo a Passo</h2>
+      <p>Olá, Aluno! Preencha as informações abaixo para adicionar um produto.</p>
+
+      <div class="steps">
+
+        <!-- Step 1 -->
+        <div class="step">
+          <h3>1 Informações Básicas</h3>
+
+          <label for="nome">Nome do Produto</label>
+          <input type="text" id="nome" name="nome">
+
+          <label for="descricao">Descrição Curta</label>
+          <textarea id="descricao" name="descricao"></textarea>
+
+          <label for="categoria">Categoria</label>
+          <select id="categoria" name="categoria">
+            <option>Vestuário</option>
+            <option>Eletrônicos</option>
+            <option>Alimentos</option>
+          </select>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step">
+          <h3>2 Definição de Preços</h3>
+
+          <label for="precoVenda">Preço de Venda (R$)</label>
+          <input type="number" id="precoVenda" name="precoVenda">
+
+          <label for="precoCusto">Preço de Custo (R$)</label>
+          <input type="number" id="precoCusto" name="precoCusto">
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step">
+          <h3>3 Estoque e Mídia</h3>
+
+          <label for="estoque">Quantidade em Estoque</label>
+          <input type="number" id="estoque" name="estoque">
+
+          <label for="imagem">Adicionar Imagem</label>
+          <input type="file" id="imagem" name="imagem">
+        </div>
+
+      </div>
+
+      <div class="buttons">
+        <button type="submit">Cadastrar Produto</button>
+        <button type="reset">Limpar Form</button>
+      </div>
+
+    </div>
+
+    <footer>
+      © 2026 Curso de Desenvolvimento WEB
+    </footer>
+
+  </div>
+
+</body>
+</html>
