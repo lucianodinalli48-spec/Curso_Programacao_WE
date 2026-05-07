@@ -1,133 +1,44 @@
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background:radial-gradient(#f6e60a, #331F19) ;
-}
-.container {
-    text-align: center;
-    background:linear-gradient(#e4e4dfbf, #f0c273) ;
-    padding: 1rem;
-    border-radius: 2rem;
-    box-shadow: 0rem 0rem 2rem 0.5rem #f6f20a;
-}
+<!DOCTYPE html> <!-- Declara que este é um documento HTML5 padrão -->
+<html lang="pt-BR"> <!-- Inicia o documento HTML e define o idioma como Português do Brasil -->
 
-h1 {
-    color: #331F19;
-    font-size: 2.3em;
-}
 
-p {
-    color: #331F19;
-    font-size: 1.5em;
 
-}
+<head> <!-- A tag <head> guarda as configurações da página (informações que não aparecem na tela principal) -->
+    <meta charset="UTF-8"> <!-- Permite que a página entenda acentos e caracteres especiais (ex: ç, ã) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Faz com que a página se adapte bem a telas de celulares e tablets -->
+    <title>Lista de Tarefas</title> <!-- É o título que vai aparecer na aba lá no topo do navegador -->
+    <link rel="stylesheet" href="../css/style.css"> <!-- Conecta a página a um arquivo de estilos (CSS) para deixar o visual bonito -->
+</head>
 
-input[type="text"]  {
-    font-size: 1.5rem;
-    width: 60%;
- 
-
-}
-
-.parHga {
+<body> <!-- Tudo que está dentro do <body> é o que o usuário realmente vai ver e interagir na tela -->
     
-    color: #191933;
-    font-size: 1.7rem;
-}
+    <!-- Uma 'div' é como se fosse uma caixa invisível usada para agrupar e organizar os elementos -->
+    <div class="container">
+        
+        <!-- <h1> é usado para o título principal e mais importante da página -->
+        <h1>Lista de Tarefas</h1>
+        
+        <!-- <p> é usado para parágrafos de texto normal -->
+        <p>Adicione suas tarefas!</p>
 
+        
+        <input type="text" id="inputTarefa" placeholder="Digite a sua tarefa">
 
-button {
-    background-color: #60041A;
-    transition: background-color 0.3s ease;
-  
-    padding: 0.7rem 2rem;
-    margin-top: 30px;   
-    padding: 10px 20px;
+        <p id="mensagem"></p>
 
-    border: none;
-    border-radius: 5px;
-    box-shadow: #160d0a 0px 0px 5px;
-    cursor: pointer;
-    font-size: 1.5em;
-  
+        <button onclick="adicionarTarefa()">Adicionar Tarefa</button>
 
-    
-}
-button:hover {
-    background-color: #fda335;
-}
+       
+        
+        
+        
+        <ol id="listaTarefas"></ol>
+        
+    </div>
 
-.botao-ativo {
-    background-color: #041660;
+    <!-- A tag <script> serve para conectar o nosso arquivo de códigos e lógicas (JavaScript) com esta estrutura (HTML). 
+         Colocamos no final do <body> para garantir que toda a parte visual (HTML) seja carregada ANTES do JavaScript tentar interagir com ela. -->
+    <script src="/Demo/script.js"></script> 
+</body>
 
-}body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background:radial-gradient(#f6e60a, #331F19) ;
-}
-.container {
-    text-align: center;
-    background:linear-gradient(#e4e4dfbf, #f0c273) ;
-    padding: 1rem;
-    border-radius: 2rem;
-    box-shadow: 0rem 0rem 2rem 0.5rem #f6f20a;
-}
-
-h1 {
-    color: #331F19;
-    font-size: 2.3em;
-}
-
-p {
-    color: #331F19;
-    font-size: 1.5em;
-
-}
-
-input[type="text"]  {
-    font-size: 1.5rem;
-    width: 60%;
- 
-
-}
-
-.parHga {
-    
-    color: #191933;
-    font-size: 1.7rem;
-}
-
-
-button {
-    background-color: #60041A;
-    transition: background-color 0.3s ease;
-  
-    padding: 0.7rem 2rem;
-    margin-top: 30px;   
-    padding: 10px 20px;
-
-    border: none;
-    border-radius: 5px;
-    box-shadow: #160d0a 0px 0px 5px;
-    cursor: pointer;
-    font-size: 1.5em;
-  
-
-    
-}
-button:hover {
-    background-color: #fda335;
-}
-
-.botao-ativo {
-    background-color: #041660;
-
-}
+</html>
