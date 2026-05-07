@@ -31,11 +31,59 @@ header {
 
 }
 
-.body {
-    display: grid;
-    grid-template-columns: 25% 75%;
+.search {
+    margin-top: 2rem;
+    border-color: #8b5cf6;
+    border-radius: 100%;
+    border: 5px;
+}
+
+
+body {
     margin: 0;
     padding: 2rem;
     justify-content: center;
+    
+}
+
+
+.cadastro {
+    flex: 8;
+
+}
+
+.container {
+  display: grid; /* Ativa o flexbox */
+  grid-template-columns: 15% 85%;
+  gap: 20px; /* Espaço entre as colunas */
+} 
+
+.coluna {
+
+    flex-direction: column;
+    gap: 10px;
+    border-style: outset;
+    border-radius: 20px;
+    padding: 2rem;
+    background: silver;
+    line-height: 2.5rem;
+  
+}
+
+
+.Produto{
+    color: rgb(0, 132, 248);
+    display: grid;
+    grid-template-columns: 33%;
+    margin-left: 10rem;
+
+}
+
+.button {
+    color: #285fd6;
+    box-sizing: border-box;
+    border-color: #000;
+    display: grid;
+    grid-template-columns: (3, 1fr);
     
 }
